@@ -2,9 +2,8 @@ body, html {
     margin: 0;
 }
 
-
 #page-wrapper {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     box-shadow: 0 0 1em gray;
 }
@@ -12,36 +11,42 @@ body, html {
 #header-navigation {
     background-color: lightblue;
     text-align: center;
-    padding-top: 30px;
+}
+
+#header-navigation > ul {
+    margin: 0;
+    padding: 0;
 }
 
 #header-navigation li {
-    font-family: sans-serif;
     display: inline-block;
+    font-family: sans-serif;
     padding: 75px 60px;
 }
 
 #main-content {
-    min-height: 700px;
+    padding-top: 2em;
 }
 
 #slider {
     width: 435px;
     height: 400px;
-    margin-left: 300px;
+    margin: 0 auto;
     background-color: purple;
 }
 
-section ul li {
+#social-networks {
+    margin: 1em 0;
+    padding: 0;
+}
+
+#social-networks > li {
     display: inline-block;
     padding: 40px;
 }
 
 footer {
-    padding-top: 0.5em;
-    width: 100%;
-    background-color: lightyellow;
-    min-height: 50px;
-    display: inline-block;
+    padding: 1em 0;
     text-align: center;
+    background-color: lightyellow;
 }
