@@ -4,6 +4,7 @@
     <title>Jessica López - Contac</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="static/css/contact.css">
 </head>
 <body>
     <div id="page-wrapper">
@@ -22,14 +23,19 @@
             <h1>Contact me</h1>
             <form>
                 <p>
-                    Name: <input type="text" name="name">
+                    <label>Name:
+                        <input type="text" name="name" maxlength="30" required autofocus>
+                    </label>
                 </p>
                 <p>
-                    Email: <input type="email" name="email">
+                    <label>Email:
+                        <input type="email" name="email" maxlength="50" required>
+                    </label>
                 </p>
                 <p>
-                    Message: <br>
-                    <textarea name="messege"></textarea>
+                    <label> Message: <br>
+                        <textarea name="message" required></textarea>
+                    </label>
                 </p>
                 <p>
                     <input type="submit" value="Send">
