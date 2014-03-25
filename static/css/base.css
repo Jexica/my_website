@@ -8,20 +8,44 @@ body, html {
     box-shadow: 0 0 1em gray;
 }
 
+header {
+    padding: 0.5em 0;
+}
+
 #header-navigation {
-    background-color: lightblue;
-    text-align: center;
+    display: table;
+    width: 100%;
 }
 
 #header-navigation > ul {
+    display: table-row;
     margin: 0;
     padding: 0;
 }
 
 #header-navigation li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#nav-logo {
+    width: 161px;
+    height: 161px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-link {
     display: inline-block;
-    font-family: sans-serif;
-    padding: 75px 60px;
+    width: 100%;
+    padding: 0.5em 0;
+    font-family: 'Kite One', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
 }
 
 #slider {
