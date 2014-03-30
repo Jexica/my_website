@@ -1,11 +1,13 @@
 body, html {
     margin: 0;
+    background-image: url('../images/background.png');
 }
 
 #page-wrapper {
     width: 1100px;
     margin: 0 auto;
     box-shadow: 0 0 1em gray;
+    background-color: white;
 }
 
 header {
@@ -40,11 +42,11 @@ header {
 .nav-link {
     display: inline-block;
     width: 100%;
-    padding: 0.5em 0;
+    padding: 0.6em 0;
     font-family: 'Kite One', sans-serif;
     font-size: 18px;
     text-decoration: none;
-    background-color: black;
+    background-color: #C8E5E3;
     color: white;
 }
 
@@ -55,6 +57,13 @@ header {
     background-color: purple;
 }
 
+h1 {
+    padding-left: 3em;
+    padding-top: 2em;
+    font-size: 16px;
+    font-family: 'Kite One', sans-serif;
+}
+
 #social-networks {
     margin: 1em 0;
     padding: 0;
@@ -62,7 +71,11 @@ header {
 
 #social-networks > li {
     display: inline-block;
-    padding: 40px;
+    padding: 20px;
+}
+
+#social-networks li img {
+    width: 40px;
 }
 
 footer {
