@@ -46,7 +46,7 @@ header {
     font-family: 'Kite One', sans-serif;
     font-size: 18px;
     text-decoration: none;
-    background-color: #C8E5E3;
+    background-color: #f09daf;
     color: white;
 }
 
@@ -82,4 +82,5 @@ footer {
     padding: 1em 0;
     text-align: center;
     background-color: lightyellow;
+    clear: both;
 }
