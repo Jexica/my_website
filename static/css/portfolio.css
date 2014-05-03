@@ -1,0 +1,15 @@
+#projects {
+    margin: 30px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+#projects li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#projects img {
+    width: 300px;
+    height: 220px;
+}
