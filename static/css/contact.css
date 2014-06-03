@@ -1,3 +1,32 @@
 #main-content {
     padding: 1em 2em 0;
 }
+
+h1 {
+    padding: 0;
+    text-align: center 
+}
+
+#img-contact {
+    width: 830px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+
+}
+
+#heart {
+    margin: 10px auto;
+    display: block;
+}
+
+#about-contact {
+    width: 340px;
+    height: 400px;
+    float: left;
+    margin: 50px 140px 0 100px;
+}
+
+form {
+    margin: 50px 0 0 90px;
+}

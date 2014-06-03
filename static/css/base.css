@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    background-image: url('../images/background.png');
+    background-color: #EDF4F3;
 }
 
 #page-wrapper {
@@ -30,12 +30,13 @@ menu {
 }
 
 #social-networks li img {
-    width: 20px;
+    width: 30px;
 }
 
 #header-navigation {
     display: table;
-    width: 100%;
+    width: 60%;
+    margin: 0 auto;
 }
 
 #header-navigation > ul {
@@ -53,7 +54,7 @@ menu {
 #nav-logo {
     width: 161px;
     height: 161px;
-    background-image: url('../images/logo.png');
+    background-image: url('../images/logon.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -65,20 +66,40 @@ menu {
     font-family: 'Kite One', inherit, sans-serif;
     font-size: 18px;
     text-decoration: none;
-    background-color: #f09daf;
-    color: white;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid lightgray;
 }
 
 #main-content {
-    min-height: 400px;
+    min-height: 700px;
 }
 
 #slider {
-    width: 435px;
+    width: 830px;
     height: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
-    background-color: purple;
+    background-image: url('../images/portada.jpg');
+}
+
+#social {
+    list-style: none;
+    text-align: center;
+}
+
+#social ul {
+    padding: 0;
+}
+
+#social ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#social img {
+    width: 260px;
+    height: 200px;
 }
 
 h1 {
@@ -91,7 +112,8 @@ h1 {
 footer {
     padding: 1em 0;
     text-align: center;
-    background-color: #e6e6e7;
+    background-color: #F0F0F0;
     clear: both;
     border-top: dotted 1px gray;
+    font-size: 0.8em;
 }
