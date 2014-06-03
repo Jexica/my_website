@@ -9,27 +9,18 @@
 </head>
 <body>
     <div id="page-wrapper">
-        <header>
-            <nav id="header-navigation">
-                <ul>
-                    <li>
-                        <a class="nav-link" href="index.html" title="Sweet Home">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="about.html">About Me</a>
-                    </li>
-                    <li id="nav-logo"></li>
-                    <li>
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <? include "common/header.phtml" ?>
+
         <section id="main-content">
-            <h1>Contact me</h1>
+        <h1>Contact me</h1>
+            <img id="img-contact" src="static/images/contact-img">
+            <img id="heart" src="static/images/heart.png">
+            <div id="about-contact">
+                Thank you so much for stopping by my site! <br>
+                If you want to contact me please, drop me a message. <br>
+                I would love to hear from you!
+            </div>
+
             <form>
                 <p>
                     <label>Name:
@@ -43,7 +34,7 @@
                 </p>
                 <p>
                     <label> Message: <br>
-                        <textarea name="message" required></textarea>
+                        <textarea name="message" rows="10" cols="50" required></textarea>
                     </label>
                 </p>
                 <p>
@@ -51,9 +42,8 @@
                 </p>
             </form>
         </section>
-        <footer>
-            Jessica López &copy;
-        </footer>
+
+        <? include "common/footer.phtml" ?>
     </div>
 </body>
 </html>
