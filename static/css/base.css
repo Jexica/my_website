@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
+
 body, html {
     margin: 0;
     background-color: #EDF4F3;
@@ -12,6 +14,7 @@ body, html {
 
 header {
     padding: 0.5em 0;
+    position: relative;
 }
 
 menu {
@@ -19,9 +22,11 @@ menu {
 }
 
 #social-networks {
-    margin: 10px 10px 0 0; 
     padding: 0;
     text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 #social-networks > li {
@@ -30,7 +35,7 @@ menu {
 }
 
 #social-networks li img {
-    width: 30px;
+    width: 20px;
 }
 
 #header-navigation {
@@ -51,24 +56,21 @@ menu {
     text-align: center;
 }
 
-#nav-logo {
-    width: 161px;
-    height: 161px;
-    background-image: url('../images/logon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .nav-link {
     display: inline-block;
     width: 100%;
     padding: 0.6em 0;
-    font-family: 'Kite One', inherit, sans-serif;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
     text-decoration: none;
     background-color: white;
     color: black;
     border-bottom: 1px solid lightgray;
+}
+
+#logo {
+    margin: 20px 450px;
 }
 
 #main-content {
@@ -81,6 +83,11 @@ menu {
     margin: 0 auto;
     margin-bottom: 20px;
     background-image: url('../images/portada.jpg');
+}
+
+#heart {
+    margin: 30px auto;
+    display: block;
 }
 
 #social {
@@ -106,7 +113,8 @@ h1 {
     padding-left: 3em;
     padding-top: 2em;
     font-size: 16px;
-    font-family: 'Kite One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 footer {

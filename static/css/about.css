@@ -8,6 +8,7 @@
 #greeting {
     display: block;
     text-align: center;
+    padding: 20px;
 }
 
 #main-content {
@@ -20,6 +21,5 @@
 }
 
 p {
-    text-align: justify;
-    padding: 20px 60px;
+    text-align: center;
 }
