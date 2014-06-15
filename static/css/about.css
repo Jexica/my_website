@@ -1,8 +1,8 @@
 #profile-picture {
+    position: absolute;
     width: 200px;
     height: 300px;
-    float: left;
-    margin: 1em 40px 20px 0;
+    margin-top: 1em;
 }
 
 #greeting {
@@ -11,7 +11,7 @@
 
 #main-content p {
     text-align: justify;
-    margin: 1em 0;
+    margin: 1em 0 1em 230px;
 }
 
 .about-spanish {
