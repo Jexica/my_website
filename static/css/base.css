@@ -40,7 +40,7 @@ menu {
 
 #header-navigation {
     display: table;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ menu {
     height: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
-    background-image: url('../images/portada.jpg');
+    background-image: url('../images/slider1.jpg');
 }
 
 #heart {
