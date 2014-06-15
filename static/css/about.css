@@ -16,3 +16,11 @@
     text-align: justify;
     margin: 1em 0;
 }
+
+.about-spanish {
+    font-style: italic;
+}
+
+#main-content .about-spanish.first-paragraph {
+    margin-top: 2em;
+}
