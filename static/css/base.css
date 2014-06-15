@@ -75,6 +75,8 @@ menu {
 
 #main-content {
     min-height: 700px;
+    padding: 0 135px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #slider {
@@ -101,7 +103,7 @@ menu {
 
 #social ul li {
     display: inline-block;
-    margin: 10px;
+    margin: 7px;
 }
 
 #social img {
