@@ -26,11 +26,24 @@ form {
 
 input[type="text"],
 input[type="email"] {
-    width: 320px;
-    margin-left: 10px;
+    display: block;
+    width: 100%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px dashed #aaa;
+    font-family: inherit;
+    font-size: 1.2em;
+    color: pink;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
 }
 
 input[type="submit"] {
+    display: block;
+    margin: auto auto;
     width: 100px;
-    line-height: 100px;
 }
