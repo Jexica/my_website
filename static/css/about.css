@@ -1,8 +1,8 @@
 #profile-picture {
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 300px;
     float: left;
-    margin: 40px 20px 20px 0;
+    margin: 40px 60px 0 40px;
 }
 
 #greeting {
@@ -23,4 +23,5 @@
 p {
     text-align: justify;
     padding: 0 80px 0 0;
+    font-family: Roboto, sans-serif;
 }
