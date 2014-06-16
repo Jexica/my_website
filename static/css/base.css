@@ -69,6 +69,11 @@ menu {
     border-bottom: 1px solid lightgray;
 }
 
+.nav-link:hover {
+    color: pink;
+    border-color: pink;
+}
+
 #logo {
     margin: 20px 450px;
 }
