@@ -73,6 +73,12 @@ menu {
     margin: 20px 450px;
 }
 
+#main-content {
+    min-height: 700px;
+    padding: 0 135px;
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
     padding: 0;
     margin: 0;
