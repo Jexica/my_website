@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300|Roboto+Condensed:300|Roboto+Slab:100);
 
 body, html {
     margin: 0;
@@ -71,44 +71,6 @@ menu {
 
 #logo {
     margin: 20px 450px;
-}
-
-#main-content {
-    min-height: 700px;
-    padding: 0 135px;
-    font-family: 'Roboto', sans-serif;
-}
-
-#slider {
-    width: 830px;
-    height: 400px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background-image: url('../images/slider1.jpg');
-}
-
-#heart {
-    margin: 30px auto;
-    display: block;
-}
-
-#social {
-    list-style: none;
-    text-align: center;
-}
-
-#social ul {
-    padding: 0;
-}
-
-#social ul li {
-    display: inline-block;
-    margin: 7px;
-}
-
-#social img {
-    width: 260px;
-    height: 200px;
 }
 
 h1 {
