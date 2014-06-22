@@ -95,8 +95,6 @@ h1 {
 footer {
     padding: 1em 0;
     text-align: center;
-    background-color: #F0F0F0;
     clear: both;
-    border-top: dotted 1px gray;
     font-size: 0.8em;
 }
