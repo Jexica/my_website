@@ -31,11 +31,11 @@ menu {
 
 #social-networks > li {
     display: inline-block;
-    padding: 2px;
+    padding: 3px;
 }
 
 #social-networks li img {
-    width: 20px;
+    width: 18px;
 }
 
 #header-navigation {
