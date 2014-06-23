@@ -5,13 +5,18 @@
     margin-top: 1em;
 }
 
+#main-content p {
+    text-align: justify;
+    margin: 1em 0 1em 230px;
+}
+
 #greeting {
     text-align: center;
 }
 
-#main-content p {
-    text-align: justify;
-    margin: 1em 0 1em 230px;
+p {
+    font-family: "Roboto+Slab", sans-serif;
+    font-weight: 100;
 }
 
 .about-spanish {
