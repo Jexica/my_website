@@ -29,7 +29,7 @@ input[type="email"] {
     border-bottom: 1px dashed #aaa;
     font-family: inherit;
     font-size: 1.2em;
-    color: pink;
+    color: gray;
 }
 
 textarea {
