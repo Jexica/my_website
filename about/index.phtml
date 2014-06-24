@@ -1,18 +1,19 @@
+<? $baseDir = '../'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Jessica López</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="static/css/base.css">
-    <link rel="stylesheet" type="text/css" href="static/css/about.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/about.css">
 </head>
 <body>
     <div id="page-wrapper">
-        <? include "common/header.phtml" ?>
+        <? include "../common/header.phtml" ?>
 
         <section id="main-content">
             <h1 id="greeting">Hi!</h1>
-            <img id="profile-picture" src="static/images/photo" alt="About me">
+            <img id="profile-picture" src="../static/images/photo.jpg" alt="About me">
             <p>
                 My name is Jessica López. I am a graphic and web designer living in Oslo. I was born in Spain in 1987 and moved to Norway in 2011 to study a Erasmus Program which I finished one year later. After that, I decided to stay here because I started loving some of the things I didn't have back in sunny Alicante: the snow, the green environment and the tranquillity.
             </p>
@@ -33,7 +34,7 @@
             </p>
         </section>
 
-        <? include "common/footer.phtml" ?>
+        <? include "../common/footer.phtml" ?>
     </div>
 </body>
 </html>
