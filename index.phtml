@@ -5,14 +5,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="static/css/base.css">
     <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <link rel="stylesheet" type="text/css" href="static/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="static/owl-carousel/owl.theme.css">
 </head>
 <body>
     <div id="page-wrapper">
         <? include "common/header.phtml" ?>
 
         <section id="main-content">
-            <article id="slider"></article>
+            <article id="slider" class="owl-carousel">
+                <div><img src="static/images/slider1a.jpg"></div>
+                <div><img src="static/images/slider1b.jpg"></div>
+            </article>
+
             <img id="heart" src="static/images/heart.png">
+
             <div id="social">
                 <ul>
                     <li>
@@ -32,11 +39,22 @@
                     </li>
 
                 </ul>
-
             </div>
         </section>
 
         <? include "common/footer.phtml" ?>
     </div>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery("#slider").owlCarousel({
+                autoPlay: 5000,
+                singleItem: true,
+                pagination: false
+            });
+        });
+    </script>
 </body>
 </html>
