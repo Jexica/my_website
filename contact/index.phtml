@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jessica López - Contac</title>
+    <title>Jessica López - Contact</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../static/css/base.css">
     <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
@@ -25,24 +25,36 @@
                 </p>
                 <img id="img-contact" src="../static/images/contact-img">
             </div>
-            <form>
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" maxlength="30" required autofocus>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" maxlength="50" required>
-                </p>
-                <p>
-                    <label> Message: <br>
-                        <textarea name="message" rows="15" cols="50" required></textarea>
-                    </label>
-                </p>
-                <p>
-                    <input type="submit" value="Send">
-                </p>
-            </form>
+
+            <? if (isset($_GET['thankyou'])): ?>
+
+                <article id="thank-you">
+                    <h2>Thank you!</h2>
+                    <p>Thanks for getting in touch with me, I'll get back to you as soon as possible!</p>
+                </article>
+
+            <? else: ?>
+
+                <form action="send-mail.php" method="POST">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" maxlength="30" required autofocus>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" maxlength="50" required>
+                    </p>
+                    <p>
+                        <label> Message: <br>
+                            <textarea name="message" rows="15" cols="50" required></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </form>
+
+            <? endif ?>
         </section>
 
         <? include "../common/footer.phtml" ?>
