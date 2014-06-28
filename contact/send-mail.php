@@ -16,5 +16,9 @@ if ($success) {
 <h1>Oops!</h1>
 <p>Something went wrong, the email could not be sent.</p>
 <p>Please try again later, or manually send an email to $myEmail</p>
+<p style="margin-top:3em">
+    You can <a href="javascript:history.back()">return to the contact form</a>
+    or to the <a href="../">home page</a>
+</p>
 HTML;
 }
