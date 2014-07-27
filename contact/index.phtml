@@ -13,19 +13,7 @@
         <? include "../common/header.phtml" ?>
 
         <section id="main-content">
-        <h1>Contact me</h1>
-            <div id="about-contact">
-                <p>
-                    Thank you so much for stopping by my website!
-                </p>
-                <p>
-                    If you want to contact me please, drop me a message.
-                </p>
-                <p>
-                    I would love to hear from you!
-                </p>
-                <img id="img-contact" src="../static/images/contact-img">
-            </div>
+            <h1>Contact me</h1>
 
             <? if (isset($_GET['thankyou'])): ?>
 
@@ -35,6 +23,19 @@
                 </article>
 
             <? else: ?>
+
+                <div id="about-contact">
+                    <p>
+                        Thank you so much for stopping by my website!
+                    </p>
+                    <p>
+                        If you want to contact me please, drop me a message.
+                    </p>
+                    <p>
+                        I would love to hear from you!
+                    </p>
+                    <img id="img-contact" src="../static/images/contact-img">
+                </div>
 
                 <form action="send-mail.php" method="POST">
                     <p>
