@@ -26,3 +26,8 @@ h1 {
     width: 160px;
     height: 220px;
 }
+
+.sample {
+    max-width: 100%;
+    margin-bottom: 2em;
+}
