@@ -4,19 +4,19 @@
     // List of projects to display (name => [description, orientation])
     $projects = array(
         'muffinitos' => array(
-            'description' => 'Stationary of Muffinitos a brand new of a bakery',
+            'description' => 'Stationary for a bakery',
             'orientation' => 'landscape',
         ),
         'optica-videre' => array(
-            'description' => 'Stationary of Optica Videre a opticial shop' ,
+            'description' => 'Stationary for an optical shop' ,
             'orientation' => 'landscape',
         ),
         'cat-empire' => array(
-            'description' => 'A poster of The Cat Empire concert',
+            'description' => 'Poster for a music concert',
             'orientation' => 'portrait',
         ),
         'nordic-festival' => array(
-            'description' => 'A poster of a festival in Oslo',
+            'description' => 'Poster for a festival in Oslo',
             'orientation' => 'portrait',
         ),
         'magazine-nomadas' => array(
@@ -44,11 +44,14 @@
             <ul id="projects">
             <? foreach ($projects as $name => $project): ?>
                 <li>
-                    <a href="show.php?project=<?= $name ?>">
-                        <img src="projects/<?= $name ?>/_thumbnail.jpg"
-                            class="<?= $project['orientation'] ?>"
-                            alt="<?= $project['description'] ?>">
-                    </a>
+                    <figure class="project">
+                        <a href="show.php?project=<?= $name ?>">
+                            <img src="projects/<?= $name ?>/_thumbnail.jpg"
+                                class="<?= $project['orientation'] ?>"
+                                alt="<?= $project['description'] ?>">
+                        </a>
+                        <figcaption><?= $project['description'] ?></figcaption>
+                    </figure>
                 </li>
             <? endforeach; ?>
             </ul>
