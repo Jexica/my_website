@@ -5,24 +5,23 @@
     margin-top: 1em;
 }
 
-#main-content p {
-    text-align: justify;
-    margin: 1em 0 1em 230px;
-}
-
 #greeting {
     text-align: center;
 }
 
-p {
-    font-family: "Roboto+Slab", sans-serif;
+#main-content p {
+    text-align: justify;
+    margin: 0.9em 0 0.9em 230px;
+    font-family: "Palatino Linotype", serif;
     font-weight: 100;
+    color: #555;
 }
 
-.about-spanish {
+#main-content .about-norwegian {
+    font-size: 1.05em;
     font-style: italic;
 }
 
-#main-content .about-spanish.first-paragraph {
+#main-content .about-norwegian .first-paragraph {
     margin-top: 2em;
 }
