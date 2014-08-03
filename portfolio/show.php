@@ -41,7 +41,7 @@
                 $i++;
             }
          ?>
-            <p>
+            <p class="back-link">
                 <a href="./">Go back to the portfolio</a>
             </p>
         </section>

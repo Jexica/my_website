@@ -63,3 +63,13 @@ h1 {
 .project:hover img {
     opacity: 0.3;
 }
+
+.back-link {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.back-link a {
+    color: #6d8fcd;
+}
