@@ -41,6 +41,6 @@ form.onsubmit = function validateForm() {
 Recaptcha.create('6LfIR_gSAAAAACorQActv4a_1JnxCjNRxiAEJGRa',
     'captcha',
     {
-        theme: 'clean'
+        theme: 'white'
     }
 );

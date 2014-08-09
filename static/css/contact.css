@@ -29,7 +29,6 @@ form {
 
 input[type="text"],
 input[type="email"] {
-    display: block;
     width: 100%;
     padding-left: 50px;
     box-sizing: border-box;
@@ -48,8 +47,12 @@ textarea {
     resize: none;
 }
 
+#recaptcha_area {
+    margin: auto;
+}
+
 input[type="submit"] {
     display: block;
-    margin: auto auto;
+    margin: 3em auto;
     width: 100px;
 }
