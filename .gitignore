@@ -1,2 +1,4 @@
 
 common/google-analytics.phtml
+
+contact/recaptcha-private-key.inc

@@ -4,14 +4,18 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $myEmail = "jessica.lm15@yahoo.no";
+$captchaResponse = $_POST['recaptcha_response_field'];
+$captchaChallenge = $_POST['recaptcha_challenge_field'];
 
 // Sanitize submitted values
 $name = sanitize($name);
 $email = sanitize($email);
 $message = sanitize($message);
+$captchaResponse = sanitize($captchaResponse);
+$captchaChallenge = sanitize($captchaChallenge);
 
 // Validate the form
-if (validateForm($name, $email, $message)) {
+if (validateForm($name, $email, $message) && validateCaptcha($captchaChallenge, $captchaResponse)) {
 
     // Send the email
     $success = mail($myEmail, "$name ($email)", $message);
@@ -86,4 +90,38 @@ function validateForm($name, $email, $message) {
     }
 
     return $valid;
+}
+
+/**
+ * Contacts the Recaptcha API and validates the submitted captcha response
+ */
+function validateCaptcha($challenge, $response) {
+    if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $remoteIp = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $remoteIp = $_SERVER['REMOTE_ADDR'];
+    }
+
+    // Obtain the private key from an external file (not in the repository)
+    require 'recaptcha-private-key.inc';
+
+    // Make the request to the Recaptcha API
+    $url = 'http://www.google.com/recaptcha/api/verify';
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, array(
+        'privatekey' => $privateKey,
+        'remoteip' => $remoteIp,
+        'challenge' => $challenge,
+        'response' => $response
+    ));
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    // The response is composed by multiple lines
+    $response = explode("\n", $response);
+
+    // The first line contains the result, 'true' or 'false'
+    return $response[0] === 'true';
 }
