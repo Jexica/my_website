@@ -1,20 +1,27 @@
 #profile-picture {
-    width: 400px;
+    position: absolute;
+    width: 200px;
     height: 300px;
-    float: left;
-    margin: 0 20px 20px 0;
+    margin-top: 1em;
 }
 
 #greeting {
-    display: block;
     text-align: center;
 }
 
-#main-content {
-    padding: 0 20px;
+#main-content p {
+    text-align: justify;
+    margin: 0.9em 0 0.9em 230px;
+    font-family: "Palatino Linotype", serif;
+    font-weight: 100;
+    color: #555;
 }
 
-#main-content h1 {
-    padding: 0;
-    margin: 0;
+#main-content .about-norwegian {
+    font-size: 1.05em;
+    font-style: italic;
+}
+
+#main-content .about-norwegian .first-paragraph {
+    margin-top: 2em;
 }

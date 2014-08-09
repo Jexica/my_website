@@ -1,3 +1,11 @@
+h1 {
+    text-align: center;
+}
+
+#main-content {
+    padding: 0 50px;
+}
+
 #projects {
     margin: 30px 0 0 0;
     padding: 0;
@@ -9,7 +17,59 @@
     margin: 10px;
 }
 
-#projects img {
+.landscape {
     width: 300px;
     height: 220px;
+}
+
+.portrait {
+    width: 160px;
+    height: 220px;
+}
+
+.sample {
+    max-width: 100%;
+    margin: 1em auto;
+    display: block;
+}
+
+.project {
+    position: relative;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+
+.project figcaption {
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.8em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+    color: #333;
+}
+
+.project:hover figcaption {
+    visibility: visible;
+}
+
+.project:hover img {
+    opacity: 0.3;
+}
+
+.back-link {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.back-link a {
+    color: #6d8fcd;
 }

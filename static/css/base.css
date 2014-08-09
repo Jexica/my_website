@@ -1,6 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300|Roboto+Condensed:300|Roboto+Slab:100);
+
 body, html {
     margin: 0;
-    background-image: url('../images/background.png');
+    background-color: #EDF4F3;
 }
 
 #page-wrapper {
@@ -12,6 +14,7 @@ body, html {
 
 header {
     padding: 0.5em 0;
+    position: relative;
 }
 
 menu {
@@ -19,23 +22,26 @@ menu {
 }
 
 #social-networks {
-    margin: 10px 10px 0 0; 
     padding: 0;
     text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 
 #social-networks > li {
     display: inline-block;
-    padding: 2px;
+    padding: 3px;
 }
 
 #social-networks li img {
-    width: 20px;
+    width: 18px;
 }
 
 #header-navigation {
     display: table;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #header-navigation > ul {
@@ -50,48 +56,53 @@ menu {
     text-align: center;
 }
 
-#nav-logo {
-    width: 161px;
-    height: 161px;
-    background-image: url('../images/logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .nav-link {
     display: inline-block;
     width: 100%;
     padding: 0.6em 0;
-    font-family: 'Kite One', inherit, sans-serif;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
     text-decoration: none;
-    background-color: #f09daf;
-    color: white;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-link:hover {
+    color: pink;
+    border-color: pink;
+}
+
+#logo {
+    margin: 20px 450px;
 }
 
 #main-content {
-    min-height: 400px;
-}
-
-#slider {
-    width: 435px;
-    height: 400px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background-color: purple;
+    min-height: 700px;
+    padding: 0 135px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    padding-left: 3em;
-    padding-top: 2em;
-    font-size: 16px;
-    font-family: 'Kite One', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 footer {
     padding: 1em 0;
     text-align: center;
-    background-color: #e6e6e7;
     clear: both;
-    border-top: dotted 1px gray;
+    color: gray;
+    font-size: 0.75em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+footer > p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }

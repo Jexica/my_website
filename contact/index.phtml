@@ -1,0 +1,70 @@
+<? $baseDir = '../'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jessica López - Contact</title>
+    <meta charset="utf-8">
+    <? include "../common/favicon.phtml" ?>
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/contact.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <? include "../common/header.phtml" ?>
+
+        <section id="main-content">
+            <h1>Contact me</h1>
+
+            <? if (isset($_GET['thankyou'])): ?>
+
+                <article id="thank-you">
+                    <h2>Thank you!</h2>
+                    <p>Thanks for getting in touch with me, I'll get back to you as soon as possible!</p>
+                </article>
+
+            <? else: ?>
+
+                <div id="about-contact">
+                    <p>
+                        Thank you so much for stopping by my website!
+                    </p>
+                    <p>
+                        If you want to contact me please, drop me a message.
+                    </p>
+                    <p>
+                        I would love to hear from you!
+                    </p>
+                    <img id="img-contact" src="../static/images/contact-img.jpg">
+                </div>
+
+                <form action="send-mail.php" method="POST">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" maxlength="30" required autofocus>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" maxlength="50" required>
+                    </p>
+                    <p>
+                        <label> Message: <br>
+                            <textarea name="message" rows="15" cols="50" required></textarea>
+                        </label>
+                    </p>
+                    <p>
+                        <div id="captcha"></div>
+                    </p>
+                    <p>
+                        <input type="submit" value="Send">
+                    </p>
+                </form>
+
+                <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+                <script type="text/javascript" src="../static/js/contact-form.js"></script>
+            <? endif ?>
+        </section>
+
+        <? include "../common/footer.phtml" ?>
+    </div>
+</body>
+</html>
