@@ -6,7 +6,8 @@ body, html {
 }
 
 #page-wrapper {
-    width: 1100px;
+    min-width: 768px;
+    max-width: 1100px;
     margin: 0 auto;
     box-shadow: 0 0 1em gray;
     background-color: white;
@@ -75,7 +76,8 @@ menu {
 }
 
 #logo {
-    margin: 20px 450px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 #main-content {
@@ -105,4 +107,8 @@ footer {
 footer > p {
     margin-top: 0;
     margin-bottom: 0.5em;
+}
+
+#footer-ribbon {
+    width: 100%;
 }
