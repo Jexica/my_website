@@ -82,7 +82,7 @@ menu {
 
 #main-content {
     min-height: 700px;
-    padding: 0 135px;
+    padding: 0 20px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -111,4 +111,10 @@ footer > p {
 
 #footer-ribbon {
     width: 100%;
+}
+
+@media (min-width: 1024px) {
+    #main-content {
+        padding: 0 135px;
+    }
 }
