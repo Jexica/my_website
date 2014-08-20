@@ -12,16 +12,16 @@ body, html {
     background-color: white;
 }
 
+menu {
+    margin: 0;
+}
+
 header {
     padding: 0.5em 0;
     position: relative;
 }
 
-menu {
-    margin: 0;
-}
-
-#social-networks {
+header .social-network-links {
     padding: 0;
     text-align: right;
     position: absolute;
@@ -29,18 +29,18 @@ menu {
     top: 10px;
 }
 
-#social-networks > li {
+header .social-network-links > li {
     display: inline-block;
     padding: 3px;
 }
 
-#social-networks li img {
+header .social-network-links > li img {
     width: 18px;
 }
 
 #header-navigation {
     display: table;
-    width: 50%;
+    min-width: 50%;
     margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ menu {
 .nav-link {
     display: inline-block;
     width: 100%;
-    padding: 0.6em 0;
+    padding: 0.6em 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 16px;
@@ -115,5 +115,11 @@ footer > p {
 @media (max-width: 1024px) {
     #main-content {
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    header .social-network-links {
+        display: none;
     }
 }
