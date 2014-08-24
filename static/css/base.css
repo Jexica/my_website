@@ -16,13 +16,20 @@ menu {
     margin: 0;
 }
 
+.social-network-links {
+    padding: 0;
+}
+
+.social-network-links > li {
+    display: inline-block;
+}
+
 header {
     padding: 0.5em 0;
     position: relative;
 }
 
 header .social-network-links {
-    padding: 0;
     text-align: right;
     position: absolute;
     right: 10px;
@@ -30,7 +37,6 @@ header .social-network-links {
 }
 
 header .social-network-links > li {
-    display: inline-block;
     padding: 3px;
 }
 
@@ -103,8 +109,12 @@ footer {
     font-weight: 100;
 }
 
+footer .social-network-links > li {
+    margin-right: 25px;
+}
+
 footer > p {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0.5em;
 }
 
