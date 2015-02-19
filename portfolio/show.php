@@ -37,9 +37,25 @@
         <section id="main-content">
         <?
             $i = 1;
-            while (file_exists(generateFilePath($folderName, $i))) {
-                echo '<img src="' . generateFilePath($folderName, $i) . '" class="sample">';
+            $baseUrl = 'http://www.jessicalopez.me';
+            $url = urlencode($baseUrl . '/portfolio/show.php?project=' . $projectName);
+            $imgUrl = generateFilePath($folderName, $i);
+            while (file_exists($imgUrl)) {
+                $mediaUrl = urlencode($baseUrl . '/portfolio/' . $imgUrl);
+                echo <<<HTML
+<div class="show-item-wrapper">
+    <div class="show-item">
+        <img src="$imgUrl" class="sample">
+        <div class="show-item-link">
+            <a href="//es.pinterest.com/pin/create/button/?url=$url&media=$mediaUrl&description=www.jessicalopez.me"
+                data-pin-do="buttonPin" data-pin-height="28">
+            <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_28.png" /></a>
+        </div>
+    </div>
+</div>
+HTML;
                 $i++;
+                $imgUrl = generateFilePath($folderName, $i);
             }
          ?>
             <p class="back-link">
@@ -49,5 +65,27 @@
 
         <? include "../common/footer.phtml" ?>
     </div>
+
+    <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+    <script type="text/javascript">
+        var linkNode, items = document.getElementsByClassName('show-item');
+
+        for (var i = 0; i < items.length; i++) {
+            linkNode = items[i].getElementsByClassName('show-item-link')[0]
+
+            items[i].onmouseover = function (linkNode) {
+                return function (e) {
+                    linkNode.style.visibility = 'visible';
+                }
+            }(linkNode);
+
+
+            items[i].onmouseout = function (linkNode) {
+                return function (e) {
+                    linkNode.style.visibility = 'hidden';
+                }
+            }(linkNode);
+        }
+    </script>
 </body>
 </html>

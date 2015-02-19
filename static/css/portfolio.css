@@ -31,7 +31,6 @@ h1 {
 
 .sample {
     max-width: 100%;
-    margin: 1em auto;
     display: block;
 }
 
@@ -74,4 +73,22 @@ h1 {
 
 .back-link a {
     color: #6d8fcd;
+}
+
+.show-item-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.show-item {
+    display: inline-block;
+    margin: 1em auto;
+    position: relative;
+}
+
+.show-item-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
 }
