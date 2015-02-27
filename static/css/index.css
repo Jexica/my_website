@@ -22,6 +22,22 @@
     text-align: center;
 }
 
+#social li a {
+    position: relative;
+}
+
+.portfolio-img, .hello-img{
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+
+.portfolio-img:hover, .hello-img:hover{
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+
 #social ul {
     padding: 0;
 }
